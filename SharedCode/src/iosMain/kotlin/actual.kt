@@ -7,3 +7,7 @@ actual fun platformName(): String {
             " " +
             UIDevice.currentDevice.systemVersion
 }
+
+actual fun postFirebaseHelloWorld() {
+    TODO("Do the ios implementation later")
+}
