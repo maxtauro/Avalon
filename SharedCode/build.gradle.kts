@@ -1,7 +1,19 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+import org.jetbrains.kotlin.gradle.tasks.*
+
 
 plugins {
     kotlin("multiplatform")
+    id("com.android.library")
+}
+
+android {
+    compileSdkVersion(28)
+    buildToolsVersion = "29.0.2"
+    defaultConfig {
+        minSdkVersion(16)
+        targetSdkVersion(28)
+    }
 }
 
 kotlin {
@@ -20,14 +32,23 @@ kotlin {
         }
     }
 
-    jvm("android")
+    jvm()
+    android()
 
-    sourceSets["commonMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-    }
+    sourceSets {
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
+            }
+        }
 
-    sourceSets["androidMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib")
+        val androidMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlin:kotlin-stdlib")
+                implementation("com.google.firebase:firebase-analytics:17.2.0")
+                implementation("com.google.firebase:firebase-database:19.2.0")
+            }
+        }
     }
 }
 
