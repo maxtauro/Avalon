@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,19 @@
 		C5A0703E23CC252600F5DBC8 /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5A0703C23CC252600F5DBC8 /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5D4255323CBB58300295513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D4255223CBB58300295513 /* AppDelegate.swift */; };
 		C5D4255523CBB58300295513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D4255423CBB58300295513 /* ViewController.swift */; };
-		C5D4255823CBB58300295513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4255623CBB58300295513 /* Main.storyboard */; };
+		C5D4255823CBB58300295513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4255623CBB58300295513 /* Main.storyboard */; settings = {ASSET_TAGS = (button, ); }; };
 		C5D4255A23CBB58600295513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D4255923CBB58600295513 /* Assets.xcassets */; };
 		C5D4255D23CBB58600295513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4255B23CBB58600295513 /* LaunchScreen.storyboard */; };
 		C5D4256823CBB58600295513 /* AvalonIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D4256723CBB58600295513 /* AvalonIOSTests.swift */; };
 		C5D4257323CBB58600295513 /* AvalonIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D4257223CBB58600295513 /* AvalonIOSUITests.swift */; };
+		C5FB003F23D3DFB200D4D3D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5FB003E23D3DFB200D4D3D6 /* GoogleService-Info.plist */; };
+		C5FB004023D3DFB200D4D3D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5FB003E23D3DFB200D4D3D6 /* GoogleService-Info.plist */; };
+		C5FB004123D3DFB200D4D3D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5FB003E23D3DFB200D4D3D6 /* GoogleService-Info.plist */; };
+		C5FB004423D3E32D00D4D3D6 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FB004323D3E32D00D4D3D6 /* FirebaseCore.framework */; };
+		C5FB004623D3E32D00D4D3D6 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FB004523D3E32D00D4D3D6 /* FirebaseDatabase.framework */; };
+		EB2319275594610E470EAA08 /* Pods_AvalonIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CC3334B36CD65F903F00BF /* Pods_AvalonIOS.framework */; };
+		EB874DFFAA0101600660AECB /* Pods_AvalonIOS_AvalonIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687B4426CE2F2D3812EF285D /* Pods_AvalonIOS_AvalonIOSUITests.framework */; };
+		F696B387B63B44B70519745F /* Pods_AvalonIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4395F740B5D350DE5F8911B6 /* Pods_AvalonIOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FB27C91FC5BD6078C65EE06 /* Pods-AvalonIOS-AvalonIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonIOS-AvalonIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-AvalonIOS-AvalonIOSUITests/Pods-AvalonIOS-AvalonIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E7DC0CF46A457AFAEE3C715 /* Pods-AvalonIOS-AvalonIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonIOS-AvalonIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-AvalonIOS-AvalonIOSUITests/Pods-AvalonIOS-AvalonIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4395F740B5D350DE5F8911B6 /* Pods_AvalonIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvalonIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		489A3CFD31DCC5F08421C955 /* Pods-AvalonIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonIOS.debug.xcconfig"; path = "Target Support Files/Pods-AvalonIOS/Pods-AvalonIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		62063FF8EC934D0281A03F85 /* Pods-AvalonIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonIOS.release.xcconfig"; path = "Target Support Files/Pods-AvalonIOS/Pods-AvalonIOS.release.xcconfig"; sourceTree = "<group>"; };
+		687B4426CE2F2D3812EF285D /* Pods_AvalonIOS_AvalonIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvalonIOS_AvalonIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CC3334B36CD65F903F00BF /* Pods_AvalonIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvalonIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A0703C23CC252600F5DBC8 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 		C5D4254F23CBB58300295513 /* AvalonIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvalonIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D4255223CBB58300295513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +79,12 @@
 		C5D4256E23CBB58600295513 /* AvalonIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvalonIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D4257223CBB58600295513 /* AvalonIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvalonIOSUITests.swift; sourceTree = "<group>"; };
 		C5D4257423CBB58600295513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FB003E23D3DFB200D4D3D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5FB004223D3DFC300D4D3D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5FB004323D3E32D00D4D3D6 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FB004523D3E32D00D4D3D6 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D946FC7EBF32489CA7A60CA4 /* Pods-AvalonIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AvalonIOSTests/Pods-AvalonIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC76FEF286A247545C76E8CC /* Pods-AvalonIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonIOSTests.release.xcconfig"; path = "Target Support Files/Pods-AvalonIOSTests/Pods-AvalonIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FB004423D3E32D00D4D3D6 /* FirebaseCore.framework in Frameworks */,
+				C5FB004623D3E32D00D4D3D6 /* FirebaseDatabase.framework in Frameworks */,
 				C5A0703D23CC252600F5DBC8 /* SharedCode.framework in Frameworks */,
+				EB2319275594610E470EAA08 /* Pods_AvalonIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F696B387B63B44B70519745F /* Pods_AvalonIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,20 +111,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB874DFFAA0101600660AECB /* Pods_AvalonIOS_AvalonIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D95784A17431EA827294BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				489A3CFD31DCC5F08421C955 /* Pods-AvalonIOS.debug.xcconfig */,
+				62063FF8EC934D0281A03F85 /* Pods-AvalonIOS.release.xcconfig */,
+				1FB27C91FC5BD6078C65EE06 /* Pods-AvalonIOS-AvalonIOSUITests.debug.xcconfig */,
+				2E7DC0CF46A457AFAEE3C715 /* Pods-AvalonIOS-AvalonIOSUITests.release.xcconfig */,
+				D946FC7EBF32489CA7A60CA4 /* Pods-AvalonIOSTests.debug.xcconfig */,
+				DC76FEF286A247545C76E8CC /* Pods-AvalonIOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C5D4254623CBB58300295513 = {
 			isa = PBXGroup;
 			children = (
+				C5FB003E23D3DFB200D4D3D6 /* GoogleService-Info.plist */,
 				C5A0703C23CC252600F5DBC8 /* SharedCode.framework */,
 				C5D4255123CBB58300295513 /* AvalonIOS */,
 				C5D4256623CBB58600295513 /* AvalonIOSTests */,
 				C5D4257123CBB58600295513 /* AvalonIOSUITests */,
 				C5D4255023CBB58300295513 /* Products */,
+				4D95784A17431EA827294BFE /* Pods */,
+				DA6B4FB344B5267C8FC0E7F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +158,7 @@
 		C5D4255123CBB58300295513 /* AvalonIOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5FB004223D3DFC300D4D3D6 /* GoogleService-Info.plist */,
 				C5D4255223CBB58300295513 /* AppDelegate.swift */,
 				C5D4255423CBB58300295513 /* ViewController.swift */,
 				C5D4255623CBB58300295513 /* Main.storyboard */,
@@ -144,6 +187,18 @@
 			path = AvalonIOSUITests;
 			sourceTree = "<group>";
 		};
+		DA6B4FB344B5267C8FC0E7F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5FB004323D3E32D00D4D3D6 /* FirebaseCore.framework */,
+				C5FB004523D3E32D00D4D3D6 /* FirebaseDatabase.framework */,
+				92CC3334B36CD65F903F00BF /* Pods_AvalonIOS.framework */,
+				687B4426CE2F2D3812EF285D /* Pods_AvalonIOS_AvalonIOSUITests.framework */,
+				4395F740B5D350DE5F8911B6 /* Pods_AvalonIOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,11 +206,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5D4257723CBB58600295513 /* Build configuration list for PBXNativeTarget "AvalonIOS" */;
 			buildPhases = (
+				BC24F860414F595525BB748A /* [CP] Check Pods Manifest.lock */,
 				C5A0704023CC25FD00F5DBC8 /* ShellScript */,
 				C5D4254B23CBB58300295513 /* Sources */,
 				C5D4254C23CBB58300295513 /* Frameworks */,
 				C5D4254D23CBB58300295513 /* Resources */,
 				C5A0703F23CC252600F5DBC8 /* Embed Frameworks */,
+				83ACCAA8FB438787B9FC0A6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5D4257A23CBB58600295513 /* Build configuration list for PBXNativeTarget "AvalonIOSTests" */;
 			buildPhases = (
+				4FEB734E513A3599BE9C3106 /* [CP] Check Pods Manifest.lock */,
 				C5D4255F23CBB58600295513 /* Sources */,
 				C5D4256023CBB58600295513 /* Frameworks */,
 				C5D4256123CBB58600295513 /* Resources */,
@@ -188,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5D4257D23CBB58600295513 /* Build configuration list for PBXNativeTarget "AvalonIOSUITests" */;
 			buildPhases = (
+				6C8FBBBB01D5FD3427AD50B4 /* [CP] Check Pods Manifest.lock */,
 				C5D4256A23CBB58600295513 /* Sources */,
 				C5D4256B23CBB58600295513 /* Frameworks */,
 				C5D4256C23CBB58600295513 /* Resources */,
+				D8B8BF94622DEEFA56496EC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +268,9 @@
 		C5D4254723CBB58300295513 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					button,
+				);
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Max Tauro";
@@ -251,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5D4255D23CBB58600295513 /* LaunchScreen.storyboard in Resources */,
+				C5FB003F23D3DFB200D4D3D6 /* GoogleService-Info.plist in Resources */,
 				C5D4255A23CBB58600295513 /* Assets.xcassets in Resources */,
 				C5D4255823CBB58300295513 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FB004023D3DFB200D4D3D6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +332,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FB004123D3DFB200D4D3D6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4FEB734E513A3599BE9C3106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvalonIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C8FBBBB01D5FD3427AD50B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvalonIOS-AvalonIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83ACCAA8FB438787B9FC0A6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvalonIOS/Pods-AvalonIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvalonIOS/Pods-AvalonIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AvalonIOS/Pods-AvalonIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC24F860414F595525BB748A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvalonIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C5A0704023CC25FD00F5DBC8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +438,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd \"$SRCROOT/../../SharedCode/build/xcode-frameworks\"\n./gradlew :SharedCode:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+		};
+		D8B8BF94622DEEFA56496EC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvalonIOS-AvalonIOSUITests/Pods-AvalonIOS-AvalonIOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvalonIOS-AvalonIOSUITests/Pods-AvalonIOS-AvalonIOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AvalonIOS-AvalonIOSUITests/Pods-AvalonIOS-AvalonIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -471,10 +637,14 @@
 		};
 		C5D4257823CBB58600295513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489A3CFD31DCC5F08421C955 /* Pods-AvalonIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../SharedCode/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../SharedCode/build/xcode-frameworks",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = AvalonIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -489,10 +659,14 @@
 		};
 		C5D4257923CBB58600295513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62063FF8EC934D0281A03F85 /* Pods-AvalonIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../SharedCode/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../SharedCode/build/xcode-frameworks",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = AvalonIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,6 +681,7 @@
 		};
 		C5D4257B23CBB58600295513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D946FC7EBF32489CA7A60CA4 /* Pods-AvalonIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +702,7 @@
 		};
 		C5D4257C23CBB58600295513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC76FEF286A247545C76E8CC /* Pods-AvalonIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +723,7 @@
 		};
 		C5D4257E23CBB58600295513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB27C91FC5BD6078C65EE06 /* Pods-AvalonIOS-AvalonIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +743,7 @@
 		};
 		C5D4257F23CBB58600295513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7DC0CF46A457AFAEE3C715 /* Pods-AvalonIOS-AvalonIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

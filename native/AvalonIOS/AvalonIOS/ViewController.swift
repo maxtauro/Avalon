@@ -8,6 +8,7 @@
 
 import UIKit
 import SharedCode
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -19,5 +20,12 @@ class ViewController: UIViewController {
         label.font = label.font.withSize(25)
         label.text = CommonKt.createApplicationScreenMessage()
         view.addSubview(label)
+        
+        
+    }
+    @IBAction func onClick(_ sender: Any) {
+        var ref: DatabaseReference!
+        ref = Database.database().reference().child("message")
+        ref.setValue(CommonKt.createApplicationScreenMessage())
     }
 }
