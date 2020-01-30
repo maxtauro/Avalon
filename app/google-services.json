@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "751681367596",
+    "firebase_url": "https://avalon-f540d.firebaseio.com",
+    "project_id": "avalon-f540d",
+    "storage_bucket": "avalon-f540d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751681367596:android:d63c5513348ed7fbbeab89",
+        "android_client_info": {
+          "package_name": "com.maxtauro.avalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751681367596-t2mi2duugf51kbfiolffr3blgg3v7est.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDblHslUB_tD_-bl0E9dgWEKouYUEt8eik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751681367596-t2mi2duugf51kbfiolffr3blgg3v7est.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "751681367596-l1chfa0ig4nhit101auosi2mc50nbu7f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.maxtauro.AvalonIOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
