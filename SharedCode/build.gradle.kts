@@ -68,6 +68,7 @@ kotlin {
             // Configure fields required by CocoaPods.
             summary = "Firebase"
             homepage = "https://github.com/maxtauro/avalon"
+
         }
     }
 }
