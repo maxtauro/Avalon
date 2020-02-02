@@ -1,6 +1,8 @@
 package com.maxtauro.avalon
 
 import platform.UIKit.UIDevice
+import cocoapods.FirebaseDatabase.FIRDatabase
+import cocoapods.FirebaseDatabase.FIRDatabaseReference
 
 actual fun platformName(): String {
     return UIDevice.currentDevice.systemName() +
@@ -9,5 +11,6 @@ actual fun platformName(): String {
 }
 
 actual fun postFirebaseHelloWorld() {
-    TODO("Do the ios implementation later")
+    val ref: FIRDatabaseReference = FIRDatabase.database().reference().child("message")
+    ref.setValue(createApplicationScreenMessage())
 }

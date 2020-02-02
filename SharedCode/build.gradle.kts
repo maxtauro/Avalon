@@ -5,7 +5,10 @@ import org.jetbrains.kotlin.gradle.tasks.*
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    id("org.jetbrains.kotlin.native.cocoapods")
 }
+
+version = "1.0"
 
 android {
     compileSdkVersion(28)
@@ -16,24 +19,11 @@ android {
     }
 }
 
+
 kotlin {
-    //select iOS target platform depending on the Xcode environment variables
-    val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
-        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
-            ::iosArm64
-        else
-            ::iosX64
 
-    iOSTarget("ios") {
-        binaries {
-            framework {
-                baseName = "SharedCode"
-            }
-        }
-    }
-
-    jvm()
     android()
+    ios("ios")
 
     sourceSets {
         val commonMain by getting {
@@ -49,29 +39,40 @@ kotlin {
                 implementation("com.google.firebase:firebase-database:19.2.0")
             }
         }
+
+        println("ProjectDir: $projectDir")
+
+        configure(
+            listOf(
+                kotlin.targets.getByName<KotlinNativeTarget>("iosArm64"),
+                kotlin.targets.getByName<KotlinNativeTarget>("iosX64")
+            )
+        ) {
+
+            compilations.getByName("main") {
+                val firebasecore by cinterops.creating {
+                    packageName("cocoapods.FirebaseCore")
+                    defFile(file("$projectDir/src/iosMain/c_interop/FirebaseCore.def"))
+                    includeDirs("$projectDir/../native/Avalon/Pods/FirebaseCore/Firebase/Core/Public")
+                    compilerOpts("-F$projectDir/src/iosMain/c_interop/modules/FirebaseCore")
+                }
+
+                val firebasedatabase by cinterops.creating {
+                    packageName("cocoapods.FirebaseDatabase")
+                    defFile(file("$projectDir/src/iosMain/c_interop/FirebaseDatabase.def"))
+                    includeDirs(
+                        "$projectDir/../native/Avalon/Pods/FirebaseDatabase/Firebase/Database/Public",
+                        "$projectDir/../native/Avalon/Pods/FirebaseCore/Firebase/Core/Public"
+                    )
+                    compilerOpts("-F$projectDir/src/iosMain/c_interop/modules/FirebaseDatabase")
+                }
+            }
+        }
+
+        cocoapods {
+            // Configure fields required by CocoaPods.
+            summary = "Firebase"
+            homepage = "https://github.com/maxtauro/avalon"
+        }
     }
 }
-
-
-val packForXcode by tasks.creating(Sync::class) {
-    group = "build"
-
-    //selecting the right configuration for the iOS framework depending on the Xcode environment variables
-    val mode = System.getenv("CONFIGURATION") ?: "DEBUG"
-    val framework = kotlin.targets.getByName<KotlinNativeTarget>("ios").binaries.getFramework(mode)
-
-    inputs.property("mode", mode)
-    dependsOn(framework.linkTask)
-
-    val targetDir = File(buildDir, "xcode-frameworks")
-    from({ framework.outputDirectory })
-    into(targetDir)
-
-    doLast {
-        val gradlew = File(targetDir, "gradlew")
-        gradlew.writeText("#!/bin/bash\nexport 'JAVA_HOME=${System.getProperty("java.home")}'\ncd '${rootProject.rootDir}'\n./gradlew \$@\n")
-        gradlew.setExecutable(true)
-    }
-}
-
-tasks.getByName("build").dependsOn(packForXcode)
