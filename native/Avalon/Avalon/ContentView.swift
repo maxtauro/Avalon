@@ -7,10 +7,18 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
+import SharedCode
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Button(action: {
+            var ref: DatabaseReference!
+            ref = Database.database().reference().child("message")
+            ref.setValue(CommonKt.createApplicationScreenMessage())
+        }) {
+            Text("Do some firebase")
+        }
     }
 }
 
