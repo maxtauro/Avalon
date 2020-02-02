@@ -13,9 +13,7 @@ import SharedCode
 struct ContentView: View {
     var body: some View {
         Button(action: {
-            var ref: DatabaseReference!
-            ref = Database.database().reference().child("message")
-            ref.setValue(CommonKt.createApplicationScreenMessage())
+            ActualKt.postFirebaseHelloWorld()
         }) {
             Text("Do some firebase")
         }
