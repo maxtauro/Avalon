@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C0F34520986A2A9BC29055F /* Pods_AvalonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C15A4F7D1EF306CBCA7CFB3 /* Pods_AvalonTests.framework */; };
-		B960EFD7826C0BFA77ACA71B /* Pods_Avalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C7CA60818C56DC6DC7509A /* Pods_Avalon.framework */; };
+		2FFF2D070590E6059C3774F9 /* Pods_AvalonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C888512247A1DBD52641C00 /* Pods_AvalonTests.framework */; };
+		3AE90D7C09574E616C20365C /* Pods_Avalon_AvalonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB7DD3A3B59FBD0DE47993 /* Pods_Avalon_AvalonUITests.framework */; };
 		C5A590A923E64E4D00766C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A590A823E64E4D00766C77 /* AppDelegate.swift */; };
 		C5A590AB23E64E4D00766C77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A590AA23E64E4D00766C77 /* SceneDelegate.swift */; };
 		C5A590AD23E64E4D00766C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A590AC23E64E4D00766C77 /* ContentView.swift */; };
@@ -20,7 +20,7 @@
 		C5A590D923E64EBF00766C77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A590D823E64EBF00766C77 /* GoogleService-Info.plist */; };
 		C5A590DA23E64EBF00766C77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A590D823E64EBF00766C77 /* GoogleService-Info.plist */; };
 		C5A590DB23E64EBF00766C77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A590D823E64EBF00766C77 /* GoogleService-Info.plist */; };
-		EC22AB75672577BDF32748E6 /* Pods_Avalon_AvalonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26DA85CFCAB25969CDB8ED5 /* Pods_Avalon_AvalonUITests.framework */; };
+		E5907C6724DF992E047ECA09 /* Pods_Avalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383154A0F3E3CA16C988F61F /* Pods_Avalon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17C7CA60818C56DC6DC7509A /* Pods_Avalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C15A4F7D1EF306CBCA7CFB3 /* Pods_AvalonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvalonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		398D3124500E5CCEC11617FF /* Pods-AvalonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonTests.release.xcconfig"; path = "Target Support Files/Pods-AvalonTests/Pods-AvalonTests.release.xcconfig"; sourceTree = "<group>"; };
-		437AF1C82A0E570C169EC66C /* Pods-AvalonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonTests.debug.xcconfig"; path = "Target Support Files/Pods-AvalonTests/Pods-AvalonTests.debug.xcconfig"; sourceTree = "<group>"; };
-		91CD6DA1B213EB331E03AD7C /* Pods-Avalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon.release.xcconfig"; path = "Target Support Files/Pods-Avalon/Pods-Avalon.release.xcconfig"; sourceTree = "<group>"; };
-		C14AE4C40060668DE8663686 /* Pods-Avalon-AvalonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon-AvalonUITests.debug.xcconfig"; path = "Target Support Files/Pods-Avalon-AvalonUITests/Pods-Avalon-AvalonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FF9F9E1E4C2D1B1574C666D /* Pods-AvalonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonTests.debug.xcconfig"; path = "Target Support Files/Pods-AvalonTests/Pods-AvalonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1015EF6233F7B9A3A3EC6116 /* Pods-AvalonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvalonTests.release.xcconfig"; path = "Target Support Files/Pods-AvalonTests/Pods-AvalonTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C888512247A1DBD52641C00 /* Pods_AvalonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvalonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		383154A0F3E3CA16C988F61F /* Pods_Avalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E8DCBB3A47F61F10A636E5 /* Pods-Avalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon.release.xcconfig"; path = "Target Support Files/Pods-Avalon/Pods-Avalon.release.xcconfig"; sourceTree = "<group>"; };
+		811DA9AC34BE4EDC4B5191B6 /* Pods-Avalon-AvalonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon-AvalonUITests.release.xcconfig"; path = "Target Support Files/Pods-Avalon-AvalonUITests/Pods-Avalon-AvalonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C5A590A523E64E4D00766C77 /* Avalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A590A823E64E4D00766C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5A590AA23E64E4D00766C77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 		C5A590CC23E64E5100766C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A590D823E64EBF00766C77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5A590DC23E64ED300766C77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D17124E11F6B6B1013DB8A68 /* Pods-Avalon-AvalonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon-AvalonUITests.release.xcconfig"; path = "Target Support Files/Pods-Avalon-AvalonUITests/Pods-Avalon-AvalonUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D90E49A094805E6CA56B0B9A /* Pods-Avalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon.debug.xcconfig"; path = "Target Support Files/Pods-Avalon/Pods-Avalon.debug.xcconfig"; sourceTree = "<group>"; };
-		E26DA85CFCAB25969CDB8ED5 /* Pods_Avalon_AvalonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avalon_AvalonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D112239B409B9BB815C44A4E /* Pods-Avalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon.debug.xcconfig"; path = "Target Support Files/Pods-Avalon/Pods-Avalon.debug.xcconfig"; sourceTree = "<group>"; };
+		E4DE993DA1577A4D51E74095 /* Pods-Avalon-AvalonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avalon-AvalonUITests.debug.xcconfig"; path = "Target Support Files/Pods-Avalon-AvalonUITests/Pods-Avalon-AvalonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAAB7DD3A3B59FBD0DE47993 /* Pods_Avalon_AvalonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avalon_AvalonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B960EFD7826C0BFA77ACA71B /* Pods_Avalon.framework in Frameworks */,
+				E5907C6724DF992E047ECA09 /* Pods_Avalon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0F34520986A2A9BC29055F /* Pods_AvalonTests.framework in Frameworks */,
+				2FFF2D070590E6059C3774F9 /* Pods_AvalonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,13 +89,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC22AB75672577BDF32748E6 /* Pods_Avalon_AvalonUITests.framework in Frameworks */,
+				3AE90D7C09574E616C20365C /* Pods_Avalon_AvalonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5A85E6EA8F1845A64ECDEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D112239B409B9BB815C44A4E /* Pods-Avalon.debug.xcconfig */,
+				54E8DCBB3A47F61F10A636E5 /* Pods-Avalon.release.xcconfig */,
+				E4DE993DA1577A4D51E74095 /* Pods-Avalon-AvalonUITests.debug.xcconfig */,
+				811DA9AC34BE4EDC4B5191B6 /* Pods-Avalon-AvalonUITests.release.xcconfig */,
+				0FF9F9E1E4C2D1B1574C666D /* Pods-AvalonTests.debug.xcconfig */,
+				1015EF6233F7B9A3A3EC6116 /* Pods-AvalonTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C5A5909C23E64E4D00766C77 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +118,8 @@
 				C5A590BE23E64E5000766C77 /* AvalonTests */,
 				C5A590C923E64E5100766C77 /* AvalonUITests */,
 				C5A590A623E64E4D00766C77 /* Products */,
-				E82F7E24F575998FC0E5E386 /* Pods */,
-				D50A2212E387056E41E8A49F /* Frameworks */,
+				AC5A85E6EA8F1845A64ECDEB /* Pods */,
+				E404CCD0CF15F0D9DB388C17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,28 +174,14 @@
 			path = AvalonUITests;
 			sourceTree = "<group>";
 		};
-		D50A2212E387056E41E8A49F /* Frameworks */ = {
+		E404CCD0CF15F0D9DB388C17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				17C7CA60818C56DC6DC7509A /* Pods_Avalon.framework */,
-				E26DA85CFCAB25969CDB8ED5 /* Pods_Avalon_AvalonUITests.framework */,
-				1C15A4F7D1EF306CBCA7CFB3 /* Pods_AvalonTests.framework */,
+				383154A0F3E3CA16C988F61F /* Pods_Avalon.framework */,
+				EAAB7DD3A3B59FBD0DE47993 /* Pods_Avalon_AvalonUITests.framework */,
+				1C888512247A1DBD52641C00 /* Pods_AvalonTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E82F7E24F575998FC0E5E386 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D90E49A094805E6CA56B0B9A /* Pods-Avalon.debug.xcconfig */,
-				91CD6DA1B213EB331E03AD7C /* Pods-Avalon.release.xcconfig */,
-				C14AE4C40060668DE8663686 /* Pods-Avalon-AvalonUITests.debug.xcconfig */,
-				D17124E11F6B6B1013DB8A68 /* Pods-Avalon-AvalonUITests.release.xcconfig */,
-				437AF1C82A0E570C169EC66C /* Pods-AvalonTests.debug.xcconfig */,
-				398D3124500E5CCEC11617FF /* Pods-AvalonTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5A590CF23E64E5100766C77 /* Build configuration list for PBXNativeTarget "Avalon" */;
 			buildPhases = (
-				7C58819408F4B65F6CA6170F /* [CP] Check Pods Manifest.lock */,
+				B84249654E49884E14DC0F55 /* [CP] Check Pods Manifest.lock */,
 				C5A590A123E64E4D00766C77 /* Sources */,
 				C5A590A223E64E4D00766C77 /* Frameworks */,
 				C5A590A323E64E4D00766C77 /* Resources */,
-				67FDE7F5B5FD95ABD343439A /* [CP] Embed Pods Frameworks */,
+				2EC5FE09AEE142214916FE66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5A590D223E64E5100766C77 /* Build configuration list for PBXNativeTarget "AvalonTests" */;
 			buildPhases = (
-				5711BA61EC9F512B0607CD89 /* [CP] Check Pods Manifest.lock */,
+				11D792865C145186C0E1B294 /* [CP] Check Pods Manifest.lock */,
 				C5A590B723E64E5000766C77 /* Sources */,
 				C5A590B823E64E5000766C77 /* Frameworks */,
 				C5A590B923E64E5000766C77 /* Resources */,
@@ -229,11 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5A590D523E64E5100766C77 /* Build configuration list for PBXNativeTarget "AvalonUITests" */;
 			buildPhases = (
-				27E9C3DB034C6DB1381CFB18 /* [CP] Check Pods Manifest.lock */,
+				C8AF06BD4BA271B710D4A9C8 /* [CP] Check Pods Manifest.lock */,
 				C5A590C223E64E5100766C77 /* Sources */,
 				C5A590C323E64E5100766C77 /* Frameworks */,
 				C5A590C423E64E5100766C77 /* Resources */,
-				9ABB1D7B6C51DD1641FED7A6 /* [CP] Embed Pods Frameworks */,
+				CB682FC458E668255DCC0439 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,29 +319,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27E9C3DB034C6DB1381CFB18 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Avalon-AvalonUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5711BA61EC9F512B0607CD89 /* [CP] Check Pods Manifest.lock */ = {
+		11D792865C145186C0E1B294 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,7 +341,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67FDE7F5B5FD95ABD343439A /* [CP] Embed Pods Frameworks */ = {
+		2EC5FE09AEE142214916FE66 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,7 +358,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Avalon/Pods-Avalon-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C58819408F4B65F6CA6170F /* [CP] Check Pods Manifest.lock */ = {
+		B84249654E49884E14DC0F55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +380,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9ABB1D7B6C51DD1641FED7A6 /* [CP] Embed Pods Frameworks */ = {
+		C8AF06BD4BA271B710D4A9C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Avalon-AvalonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB682FC458E668255DCC0439 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -591,7 +591,7 @@
 		};
 		C5A590D023E64E5100766C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D90E49A094805E6CA56B0B9A /* Pods-Avalon.debug.xcconfig */;
+			baseConfigurationReference = D112239B409B9BB815C44A4E /* Pods-Avalon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,7 +611,7 @@
 		};
 		C5A590D123E64E5100766C77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91CD6DA1B213EB331E03AD7C /* Pods-Avalon.release.xcconfig */;
+			baseConfigurationReference = 54E8DCBB3A47F61F10A636E5 /* Pods-Avalon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,7 +631,7 @@
 		};
 		C5A590D323E64E5100766C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 437AF1C82A0E570C169EC66C /* Pods-AvalonTests.debug.xcconfig */;
+			baseConfigurationReference = 0FF9F9E1E4C2D1B1574C666D /* Pods-AvalonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,7 +653,7 @@
 		};
 		C5A590D423E64E5100766C77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 398D3124500E5CCEC11617FF /* Pods-AvalonTests.release.xcconfig */;
+			baseConfigurationReference = 1015EF6233F7B9A3A3EC6116 /* Pods-AvalonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,7 +675,7 @@
 		};
 		C5A590D623E64E5100766C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C14AE4C40060668DE8663686 /* Pods-Avalon-AvalonUITests.debug.xcconfig */;
+			baseConfigurationReference = E4DE993DA1577A4D51E74095 /* Pods-Avalon-AvalonUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -695,7 +695,7 @@
 		};
 		C5A590D723E64E5100766C77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17124E11F6B6B1013DB8A68 /* Pods-Avalon-AvalonUITests.release.xcconfig */;
+			baseConfigurationReference = 811DA9AC34BE4EDC4B5191B6 /* Pods-Avalon-AvalonUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
