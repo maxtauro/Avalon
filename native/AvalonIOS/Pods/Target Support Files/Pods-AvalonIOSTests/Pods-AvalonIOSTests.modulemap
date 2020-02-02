@@ -1,6 +1,0 @@
-framework module Pods_AvalonIOSTests {
-  umbrella header "Pods-AvalonIOSTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
