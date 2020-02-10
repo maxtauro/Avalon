@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Avalon</string>
+
+    <!--General UI -->
+    <string name="game_id">Game Id:</string>
+    <string name="ok_button_label">OK</string>
+    <string name="cancel_button_label">Cancel</string>
+
+    <!--Start Page-->
+    <string name="create_game_button_label">Create Game</string>
+    <string name="join_game_button_label">Join game</string>
+
+    <!--Dialogs-->
+    <string name="game_id_hint">Game Id</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="join_lobby_leave_string">Leave</string>
+
+    <!--[END] UI String resource -->
+
+    <!--[START] Input Validation Responses-->
+    <string name="invalid_name_msg">"Invalid Player Name"</string>
+    <string name="invalid_game_id_format_msg">"Game ID consists of 6 alphanumeric chars"</string>
+    <!--[END] Input Validation Responses-->
+
 </resources>
