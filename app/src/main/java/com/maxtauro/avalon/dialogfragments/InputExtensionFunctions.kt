@@ -1,4 +1,4 @@
-package com.maxtauro.avalon.DialogFragments
+package com.maxtauro.avalon.dialogfragments
 
 import android.text.Editable
 import android.text.TextWatcher

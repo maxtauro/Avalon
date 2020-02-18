@@ -1,4 +1,4 @@
-package com.maxtauro.monopolywallet.DialogFragments
+package com.maxtauro.avalon.dialogfragments
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
-import com.maxtauro.avalon.DialogFragments.validate
 import com.maxtauro.avalon.R
 
 /**
@@ -23,7 +22,7 @@ class DialogFragmentCreateGame(private val onSuccess: (String) -> Unit) : Dialog
 
         val builder = AlertDialog.Builder(activity)
             .setView(createView())
-            .setPositiveButton(createGameBtnLabel) { _, _ -> onSuccess(hostNameInput.toString()) }
+            .setPositiveButton(createGameBtnLabel) { _, _ -> onSuccess(hostNameInput.text.toString()) }
             .setNegativeButton(cancelBtnLabel) { _, _ -> dismiss() }
 
         return builder.create()
@@ -45,7 +44,6 @@ class DialogFragmentCreateGame(private val onSuccess: (String) -> Unit) : Dialog
         private const val TAG = "Fragment CreateGame"
         private const val CLICKED_CREATE = "User clicked Create button"
         private const val INPUT_SUCCESS = "Valid Input, dismissing Fragment"
-
 
         fun createInstance(onSuccess: (String) -> Unit): DialogFragmentCreateGame {
             return DialogFragmentCreateGame(onSuccess)

@@ -7,7 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
-import com.maxtauro.avalon.DialogFragments.validate
+import com.maxtauro.avalon.dialogfragments.validate
 import com.maxtauro.avalon.R
 
 /**

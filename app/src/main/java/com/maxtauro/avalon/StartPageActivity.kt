@@ -1,9 +1,11 @@
 package com.maxtauro.avalon
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.maxtauro.monopolywallet.DialogFragments.DialogFragmentCreateGame
+import com.maxtauro.avalon.dialogfragments.DialogFragmentCreateGame
+import com.maxtauro.avalon.lobbyactivities.HostLobbyActivity
 import com.maxtauro.monopolywallet.DialogFragments.DialogFragmentJoinGame
 
 class StartPageActivity : AppCompatActivity() {
@@ -27,22 +29,28 @@ class StartPageActivity : AppCompatActivity() {
     }
 
     private fun onCreateGameClicked() {
-        DialogFragmentCreateGame.createInstance(::createGame).dialog?.show()
+        DialogFragmentCreateGame.createInstance(::enterHostLobby)
+            .show(supportFragmentManager, CREATE_GAME_DIALOG_TAG)
     }
 
     private fun onJoinGameClicked() {
-        DialogFragmentJoinGame.createInstance(::joinGame).dialog?.show()
+        DialogFragmentJoinGame.createInstance(::joinGameAsync)
+            .show(supportFragmentManager, JOIN_GAME_DIALOG_TAG)
     }
 
-    private fun createGame(playerName: String) {
-
+    private fun joinGameAsync(gameId: String, playerName: String) {
+        // First we check if the game exists, if it does, we
+        // send the user to the game lobby
     }
 
-    private fun joinGame(gameId: String, playerName: String) {
-
+    private fun enterHostLobby(hostName: String) {
+        val hostLobbyIntent = Intent(this, HostLobbyActivity::class.java)
+        hostLobbyIntent.putExtra("hostName", hostName)
+        startActivity(hostLobbyIntent)
     }
 
-    private fun startGameLobbyActivity() {
-
+    companion object {
+        private const val CREATE_GAME_DIALOG_TAG = "DialogFragmentCreateGame.TAG"
+        private const val JOIN_GAME_DIALOG_TAG = "DialogFragmentJoinGame.TAG"
     }
 }
