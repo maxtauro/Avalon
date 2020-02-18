@@ -3,6 +3,7 @@ package com.maxtauro.avalon.lobbyactivities
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -32,6 +33,10 @@ class HostLobbyActivity : AppCompatActivity() {
 
     private fun setupView() {
         setContentView(R.layout.activity_lobby)
+
+        var txtGameId: TextView = findViewById(R.id.txt_game_id)
+        txtGameId.text = "Game #: ${gameHelper.gameId}"
+
         setupButtons()
         setupPlayerList()
     }

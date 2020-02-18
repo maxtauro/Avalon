@@ -1,4 +1,4 @@
-package com.maxtauro.monopolywallet.DialogFragments
+package com.maxtauro.avalon.dialogfragments
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -7,7 +7,6 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
-import com.maxtauro.avalon.dialogfragments.validate
 import com.maxtauro.avalon.R
 
 /**
@@ -64,7 +63,7 @@ class DialogFragmentJoinGame(private val onSuccess: (String, String) -> Unit) : 
     }
 
     private fun isValidGameIdInput(gameIdInput: String): Boolean {
-        val isCorrectLength = gameIdInput.length == 6
+        val isCorrectLength = gameIdInput.length == 4
         val isAlphaNumeric = gameIdInput.matches(Regex("[A-Za-z0-9]+"))
 
         return isCorrectLength && isAlphaNumeric

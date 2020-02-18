@@ -16,14 +16,14 @@ class AvalonGameModel(
         private const val TAG = "AvalonGameModel"
 
         private const val alphanumericChars =
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            "abcdefghijklmnopqrstuvwxyz0123456789"
 
         fun generateRandomId(): String {
             val random = Random(getSystemTime())
 
             var randomGameId = ""
 
-            repeat((0..4).count()) {
+            repeat((0..3).count()) {
                 randomGameId += alphanumericChars[random.nextInt(
                     alphanumericChars.length
                 )]

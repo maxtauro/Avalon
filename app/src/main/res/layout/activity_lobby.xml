@@ -29,6 +29,7 @@
     <Button
         android:id="@+id/btn_start_game"
         style="@android:style/Widget.Material.Button.Small"
+        android:visibility="gone"
         android:layout_width="144dp"
         android:layout_height="49dp"
         android:layout_marginStart="16dp"
@@ -41,6 +42,7 @@
     <Button
         android:id="@+id/btn_cancel_game"
         style="@android:style/Widget.Material.Button.Small"
+        android:visibility="gone"
         android:layout_width="145dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"

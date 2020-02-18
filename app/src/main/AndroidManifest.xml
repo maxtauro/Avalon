@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".lobbyactivities.HostLobbyActivity" />
+        <activity android:name=".lobbyactivities.PlayerLobbyActivity" />
     </application>
 
 </manifest>
